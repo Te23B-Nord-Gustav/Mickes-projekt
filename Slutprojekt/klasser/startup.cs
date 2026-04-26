@@ -7,8 +7,7 @@ public class Startup
         Console.WriteLine("");
         Console.WriteLine(@"Så hela grejen är basicly en lista där du kan skriva in nummret på det kriteriet du vill se.
 och då få en typ demo på det. liksom bara en demonstration på att jag har det i programmet. 
-Dem flesta kommer knappast att faktiskt göra något :)  
-        }");
+Dem flesta kommer knappast att faktiskt göra något :)}");
     }
 
 }
