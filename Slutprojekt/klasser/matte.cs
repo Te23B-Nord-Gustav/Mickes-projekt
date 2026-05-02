@@ -15,7 +15,7 @@ public class Geometri : Matte
     {
         Console.WriteLine("innan du läser vidare så är det här faktiskt arv i två led men extremt workaround");
         Console.WriteLine("...");
-        Console.WriteLine($"vi ska göra en {kapitel}(<string från orginal klassen som körs i en metod i arv:1) nu utan readlines så säger jag bredden är 5m och höjden 5m");
+        Console.WriteLine($"vi ska göra en {kapitel}(<string från orginal klassen som körs i en metod i arv:1) nu");
     }
     public string enhet = "meter";
 }

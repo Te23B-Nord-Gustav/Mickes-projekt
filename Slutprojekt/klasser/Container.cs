@@ -17,13 +17,17 @@ public class Container<T>
         // skriver ut vad som ligger i dem variablerna jag skapade med olika innehål trots dem har "" samma orgin
         Console.WriteLine(nummer.inneholl);
         Console.WriteLine(ord.inneholl);
+        Thread.Sleep(2000);
         Console.WriteLine("");
         Console.WriteLine("Eller här har jag gjort en lista med en generisk klass som håller årtal som exempel");
 
-        // Hör gjorde jag en till generisk klass
+        // Hör gjorde jag en till generisk klass fast en lista i guess
         List<string> årtal = new List<string>();
         årtal.Add("2007");
         årtal.Add("2006");
+        Console.WriteLine(årtal[0] + " och " + årtal[1] + " är dem som ligger där just nu btw");
+        Console.WriteLine("tryck för att återgå");
+        Console.ReadKey();
 
     }
 
