@@ -1,14 +1,10 @@
 ﻿
 
-// Startup visas en gång i början bara för en kort introduktion
-Startup intro = new Startup();
-intro.Test();// körs utanför sjölva loopen för att det är bara för att förklara programmet inte viktigt
-
-
-
+Iformen f = new();
+Fysik F = new();
 
 // här är själva loopen för programmet Som går i ordningen.  Meny -> val -> visar dem kriterierna ->starta om loopen
-string C = "_C nivå"; // bara för att spara text haha
+string C = "_C nivå";
 while (true)
 {
     Console.WriteLine("skriv vilken kriterie grupp du vill köra från menyn.");
@@ -19,19 +15,14 @@ while (true)
 
 
     string val = Console.ReadLine();//input för vad som ska köras
-    //vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
     //Så här är den underbara if-sats ormen som bestömmer vad som ska köras
-    if (val == "0")
+    if (val == "0") { break; }
+    else if (val == "1"){f.Körareademo();}
+    else if (val == "2"){Container<string>.Testdemo();}
+    else if (val == "3")
     {
-        break;
-    }
-    else if (val == "1")
-    {
-        Iformen.Körareademo();
-    }
-    else if (val == "2")
-    {
-        Container<string>.Testdemo();
+        F.kapitel.Add(new Chapter() { name = "gurre" });
+        Console.WriteLine(F.kapitel[0].name);
     }
     else
     {

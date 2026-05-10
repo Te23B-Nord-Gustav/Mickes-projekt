@@ -6,7 +6,7 @@
 
 public class Iformen
 {
-    public static void Körareademo()
+    public void Körareademo()
     {
         //jag valde ju att skriva koden här. som gör en ny "Areademo" sen kör intro metoden och area metoden sen avslutar den visningen
         Areademo demo = new Areademo();
