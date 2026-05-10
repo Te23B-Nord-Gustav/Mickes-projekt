@@ -1,15 +1,15 @@
 
 
-public class Fysik
+public class Info
 {
-    public List<Chapter> kapitel = [];
+    public List<Bil> Cars = [];
+    public List<Motorcykel> Motos = [];
 
 }
 
-public class Chapter
+public class Fordon
 {
     private string _name = "";
-    
     public string name
     {
         get
@@ -21,9 +21,55 @@ public class Chapter
             if (value != "") _name = value;
         }
     }
+
+    
+    
+
+    
+}
+
+public class Bil: Fordon
+{
+
+    private int _hp;
+    public int hp
+    {
+        get
+        {
+            return _hp;
+        }
+        set
+        {
+            if(value != 0) _hp = value;
+        }
+    }
+    
 }
 
 
+public class Motorcykel: Fordon
+{
+
+    private int _kubik;
+    public int kubik
+    {
+        get
+        {
+            return _kubik;
+        }
+        set
+        {
+            if(value != 0) _kubik = value;
+        }
+    }
+
+}
+
+public class Kawasaki: Motorcykel
+{
+    private int 
+    
+}
 
 
 

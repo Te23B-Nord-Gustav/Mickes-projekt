@@ -1,7 +1,7 @@
 ﻿
 
 Iformen f = new();
-Fysik F = new();
+Info F = new();
 
 // här är själva loopen för programmet Som går i ordningen.  Meny -> val -> visar dem kriterierna ->starta om loopen
 string C = "_C nivå";
@@ -21,8 +21,10 @@ while (true)
     else if (val == "2"){Container<string>.Testdemo();}
     else if (val == "3")
     {
-        F.kapitel.Add(new Chapter() { name = "gurre" });
-        Console.WriteLine(F.kapitel[0].name);
+        F.Cars.Add(new Bil() { name = "Audi", hp = 400});
+        F.Motos.Add(new Motorcykel() { name = "Ninja", kubik = 200});
+    
+        Console.WriteLine(F.Motos[0].name + " " + F.Motos[0].kubik);
     }
     else
     {
